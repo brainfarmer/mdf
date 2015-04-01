@@ -9,7 +9,8 @@ defmodule Mdf.Mixfile do
   end
 
   def application do
-    [applications: [:cowboy, :plug, :logger],
+    [registered: [:mdf],
+		 applications: [:cowboy, :plug, :logger],
      mod: {Mdf, []}]
   end
 
