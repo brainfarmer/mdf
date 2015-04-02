@@ -1,0 +1,28 @@
+box: manukall/elixir@0.0.12
+
+build:
+  steps:
+    # Get dependencies and compile
+    - script:
+        name: mix deps get compile
+        code: |
+          cd $WERCKER_SOURCE_DIR
+          mix do deps.get, compile
+
+    # Run tests
+    - script:
+        name: mix test
+        code: |
+          mix test
+
+    # Save artifact
+    - script:
+        name: add to repo
+        code: |
+          cp -R ./ ${WERCKER_OUTPUT_DIR}
+
+deploy:
+  steps:
+    - heroku-deploy:
+        key-name: HEROKU_DEPLOY_KEY
+        install-toolbelt: true
