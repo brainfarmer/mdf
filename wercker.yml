@@ -26,4 +26,3 @@ deploy:
     - heroku-deploy:
         key-name: HEROKU_DEPLOY_KEY
         install-toolbelt: true
-        
