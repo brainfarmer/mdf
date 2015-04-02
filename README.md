@@ -4,3 +4,24 @@ Mdf
 ===
 
 Markdown Documentation Formatter
+
+### Getting Started
+
+After you clone the repo to your local drive
+
+Update any dependencies
+`mix deps.get`
+
+Run the tests to make sure everything is okay
+`mix test`
+
+(You should see 0 failures)
+
+Run the app 
+`iex -S mix`
+
+It's web based so you should message stating that cowboy is starting on port
+4000
+
+Browse to `http://localhost:4000`
+You should see welcome page in your browser
