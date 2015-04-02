@@ -1,4 +1,4 @@
-box: manukall/elixir
+box: trenpixster/elixir
 
 build:
   steps:
