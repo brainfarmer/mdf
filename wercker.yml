@@ -24,5 +24,6 @@ build:
 deploy:
   steps:
     - heroku-deploy:
-        key-name: HEROKU_DEPLOY_KEY
-        install-toolbelt: true
+        key-name: WERCKER_HEROKU_DEPLOY_KEY
+        key-name: WERCKER_HEROKU_DEPLOY_APP_NAME
+    #  install-toolbelt: true
