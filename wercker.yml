@@ -24,5 +24,6 @@ build:
 deploy:
   steps:
     - heroku-deploy:
-        heroku_key: HEROKU_KEY
+      # heroku_key: HEROKU_KEY
+        key-name: HEROKU_KEY
         # install-toolbelt: true
