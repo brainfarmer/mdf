@@ -23,7 +23,9 @@ build:
 
 deploy:
   steps:
-    - heroku-deploy:
+    - wercker/heroku-deploy@2.2.1:
+        key-name: HEROKU_KEY
+    #    - heroku-deploy:
       # heroku_key: HEROKU_KEY
-        heroku_key: HEROKU_KEY
+      #    heroku_key: HEROKU_KEY
         # install-toolbelt: true
