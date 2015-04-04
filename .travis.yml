@@ -1,6 +1,5 @@
 # Travis CI configuration file
 #
 language: elixir
-  - 1.0.3 # explicity set Elixiver version 1.0.2 is default
 otp_release:
   - 17.4 # specify OTP release required for Elixir
