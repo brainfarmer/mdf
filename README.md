@@ -1,6 +1,7 @@
 [![wercker status](https://app.wercker.com/status/7b94119993c0b6042ecadb8911be941c/m "wercker status")](https://app.wercker.com/project/bykey/7b94119993c0b6042ecadb8911be941c)
 
-ld Status](https://travis-ci.org/brainfarmer/mdf.svg?branch=jgs-heroku-deploy)](https://travis-ci.org/brainfarmer/mdf)[Travis status](https://travis-ci.org/brainfarmer/mdf.svg?branch=jgs-heroku-deploy)
+Travis CI 
+[![Build Status](https://travis-ci.org/brainfarmer/mdf.svg?branch=jgs-heroku-deploy)](https://travis-ci.org/brainfarmer/mdf)
 
 Mdf
 ===
@@ -19,7 +20,7 @@ Run the tests to make sure everything is okay
 
 (You should see 0 failures)
 
-Run the app 
+Run the app
 `iex -S mix`
 
 It's web based so you should message stating that cowboy is starting on port
