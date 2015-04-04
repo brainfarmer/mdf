@@ -1,5 +1,11 @@
-# Travis CI configuration file
-#
 language: elixir
 otp_release:
-  - 17.4 # specify OTP release required for Elixir
+- 17.4
+
+deploy:
+  provider: heroku
+  api_key:
+    jgs-heroku-deploy:
+      secure: V3UgHsJJB31EESxLIOYuL/TRchWiOEdUyEcVdhF/U85ZH4wPVXjnIIjNTeEwS4yzAIjpOp2gu0G0pgRxktlFahby80jxas4hQJoZ9vwDoluLo2MZSvxVHXvvkohzltSvSHS8e0XLfl6Hf+hjuBJQCQBZCW+NQwhofw3xX36UBWs=
+  app:
+    jgs-heroku-deploy: mdf-dev
